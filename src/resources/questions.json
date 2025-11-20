@@ -1,0 +1,158 @@
+{
+  "questions": [
+    {
+      "id": "E-T-1",
+      "text": "Which OOP principle promotes using a single interface to represent multiple underlying forms?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Encapsulation",
+        "Polymorphism",
+        "Composition",
+        "Abstraction"
+      ],
+      "answer": 1,
+      "hint": "Think of methods sharing a common signature but different behavior.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "E-P-1",
+      "text": "What will be printed?\\nint x = 2;\\nSystem.out.println(x << 1);",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "hint": "Left shift doubles an integer.",
+      "snippet": "int x = 2;\\nSystem.out.println(x << 1);",
+      "timeLimit": 40
+    },
+    {
+      "id": "M-T-1",
+      "text": "Which data structure offers O(1) average lookup time when using hashing?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "ArrayList",
+        "LinkedList",
+        "HashMap",
+        "PriorityQueue"
+      ],
+      "answer": 2,
+      "hint": "It stores key-value pairs.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "M-P-2",
+      "text": "Given the snippet, what is printed?",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "MINI_BOSS",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "Compilation error"
+      ],
+      "answer": 1,
+      "hint": "Enhanced for loops create copies of values.",
+      "snippet": "int[] nums = {1,2,3};\\nint sum = 0;\\nfor (int n : nums) {\\n  sum += n;\\n}\\nSystem.out.println(sum);",
+      "timeLimit": 40
+    },
+    {
+      "id": "H-T-1",
+      "text": "Which Big-O notation best describes the worst-case time of quicksort?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "MINI_BOSS",
+      "options": [
+        "O(log n)",
+        "O(n)",
+        "O(n log n)",
+        "O(n^2)"
+      ],
+      "answer": 3,
+      "hint": "Consider when the pivot is always the smallest element.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "H-P-1",
+      "text": "What does the method print?",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "BONUS",
+      "options": [
+        "alpha",
+        "beta",
+        "gamma",
+        "delta"
+      ],
+      "answer": 2,
+      "hint": "Streams are lazily evaluated until terminal operation.",
+      "snippet": "Stream.of(\"alpha\",\"beta\",\"gamma\")\\n  .filter(s -> s.startsWith(\"g\"))\\n  .findFirst()\\n  .ifPresent(System.out::println);",
+      "timeLimit": 40
+    },
+    {
+      "id": "E-T-2",
+      "text": "Which keyword prevents a class from being subclassed in Java?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "static",
+        "sealed",
+        "final",
+        "private"
+      ],
+      "answer": 2,
+      "hint": "It's also used to make variables immutable.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "M-P-3",
+      "text": "What is the output?",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": 0,
+      "hint": "Post-increment returns the old value first.",
+      "snippet": "int x = 5;\\nSystem.out.println(x++);",
+      "timeLimit": 40
+    },
+    {
+      "id": "H-T-3",
+      "text": "Which pattern ensures a class has only one instance and provides a global point of access?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Factory",
+        "Observer",
+        "Singleton",
+        "Decorator"
+      ],
+      "answer": 2,
+      "hint": "Often implemented with a private constructor.",
+      "snippet": "",
+      "timeLimit": 25
+    }
+  ]
+}
+
