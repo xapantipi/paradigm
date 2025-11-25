@@ -1,0 +1,2469 @@
+{
+  "questions": [
+    {
+      "id": "0000",
+      "text": "According to general classification, what is a programming paradigm?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "A specific language syntax",
+        "A fundamental style of computer programming",
+        "A compiler optimization technique",
+        "A hardware architecture model"
+      ],
+      "answer": 1,
+      "hint": "It's the core philosophy or approach.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0001",
+      "text": "Which of the following describes the core characteristic of Machine Language?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "It uses English-like keywords",
+        "It is machine-independent and portable",
+        "It is the direct representation of code run by the device (binary/hex)",
+        "It provides memory management support automatically"
+      ],
+      "answer": 2,
+      "hint": "It's the lowest level of code the CPU executes.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0002",
+      "text": "What is the primary difference between Declarative and Imperative programming?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Imperative uses functions; Declarative uses objects",
+        "Imperative specifies \"how\" to get a result; Declarative specifies \"what\" result is needed",
+        "Imperative is for web development; Declarative is for systems",
+        "There is no difference; they are synonyms"
+      ],
+      "answer": 1,
+      "hint": "Think about *telling* the computer vs. *asking* for a result.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0003",
+      "text": "John Ousterhout proposed a dichotomy of programming languages. What are the two types?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Object-Oriented and Functional",
+        "Compiled and Interpreted",
+        "System languages and Scripting languages",
+        "High-level and Low-level"
+      ],
+      "answer": 2,
+      "hint": "His split was based on performance and development speed.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0004",
+      "text": "Traditional sequential computers are typically based on which model, where program and data share memory?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Lambda Calculus",
+        "Von Neumann model",
+        "Turing Machine",
+        "Neural Network model"
+      ],
+      "answer": 1,
+      "hint": "This model separates the CPU from memory.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0005",
+      "text": "Why is Assembly Language considered to have a major shortcoming regarding portability?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "It requires a lot of memory",
+        "It cannot perform mathematical operations",
+        "Each hardware architecture has its own instruction set, requiring rewrites for different machines",
+        "It uses too many English-like words"
+      ],
+      "answer": 2,
+      "hint": "Assembly instructions are tied directly to the CPU architecture.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0006",
+      "text": "Alan Kay categorized languages into \"agglutination of features\" and \"crystallization of style.\" Which pair represents the \"crystallization\" (pure) style?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "COBOL and PL/1",
+        "C++ and Java",
+        "Smalltalk and Lisp",
+        "Ada and Pascal"
+      ],
+      "answer": 2,
+      "hint": "These are languages with very pure, foundational concepts.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0007",
+      "text": "What defines a \"multi-paradigm\" language?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "A language that has changed names over time",
+        "A language that only supports imperative programming",
+        "A language that accidentally allows different styles",
+        "A language purposely designed to allow programming in many paradigms"
+      ],
+      "answer": 3,
+      "hint": "It supports multiple fundamental styles.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0008",
+      "text": "Functional programming was derived from which mathematical model developed by Alonzo Church?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Set Theory",
+        "Lambda Calculus",
+        "Graph Theory",
+        "Linear Algebra"
+      ],
+      "answer": 1,
+      "hint": "It is a formal system for function definition, application, and recursion.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0009",
+      "text": "Many paradigms are known for what they forbid. What does pure functional programming typically disallow?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "The use of recursion",
+        "The use of functions",
+        "The use of side-effects",
+        "The use of distinct variable names"
+      ],
+      "answer": 2,
+      "hint": "It aims for referential transparency.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0010",
+      "text": "What is the primary way procedural programming organizes code to make it more manageable and reusable?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "By using objects and classes",
+        "By breaking it down into procedures or functions",
+        "Through mathematical functions and expressions",
+        "By describing what the result should be"
+      ],
+      "answer": 1,
+      "hint": "Think of functions and procedures as small reusable steps.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0011",
+      "text": "In procedural programming, what is a named block of code that performs a specific task and can be \"called\" from other parts of the program?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Object",
+        "Class",
+        "Procedure or Function",
+        "Method"
+      ],
+      "answer": 2,
+      "hint": "It is a reusable block of code that you call by name.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0012",
+      "text": "Which of the following is a classic example of a procedural programming language?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Java",
+        "Haskell",
+        "C",
+        "HTML"
+      ],
+      "answer": 2,
+      "hint": "Think low-level, compiled language used widely in systems programming.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0013",
+      "text": "What is the key difference between a \"procedure\" and a \"function\" in most procedural languages?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "A procedure is faster than a function",
+        "A function returns a value, while a procedure does not",
+        "A procedure can be recursive, but a function cannot",
+        "There is no difference; they are synonymous"
+      ],
+      "answer": 1,
+      "hint": "Think about whether something gives back a value.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0014",
+      "text": "What is the term for the visibility and lifetime of a variable declared inside a function?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Global scope",
+        "Local scope",
+        "Static scope",
+        "Dynamic scope"
+      ],
+      "answer": 1,
+      "hint": "It is only accessible within that function.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0015",
+      "text": "The ability to control program flow using sequences, selections, and iterations is inherited from which paradigm?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Functional programming",
+        "Object-oriented programming",
+        "Imperative programming",
+        "Declarative programming"
+      ],
+      "answer": 2,
+      "hint": "This paradigm focuses on changing program state step-by-step.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0016",
+      "text": "What is the main benefit of using a Call stack in procedural programming?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Store program instructions",
+        "Manage memory for global variables",
+        "Track the sequence of function calls and local executions",
+        "Speed up arithmetic operations"
+      ],
+      "answer": 2,
+      "hint": "It helps the program remember where to return after each function call.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0017",
+      "text": "What is a potential disadvantage of using extensive global variables?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "They make programs run faster",
+        "They improve code readability",
+        "They can lead to code that is difficult to debug",
+        "They reduce memory usage"
+      ],
+      "answer": 2,
+      "hint": "Think about unintended changes from many different places in the program.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0018",
+      "text": "In C, what is the difference between \"pass-by-value\" and \"pass-by-reference\"?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Pass-by-value is faster than pass-by-reference",
+        "Pass-by-value allows modification of original, pass-by-reference does not",
+        "Pass-by-value gives a copy, pass-by-reference gives memory address",
+        "There is no practical difference"
+      ],
+      "answer": 2,
+      "hint": "Think whether the function sees a copy or the original variable.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0019",
+      "text": "How does the \"stack\" relate to function calls in procedural programming?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "It stores global variables",
+        "It stores function return addresses and local variables",
+        "It stores program instructions",
+        "It stores file handles"
+      ],
+      "answer": 1,
+      "hint": "Think of what’s needed to resume execution after a function finishes.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0020",
+      "text": "What is a core principle of functional programming where data cannot be changed after creation?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Mutability",
+        "Immutability",
+        "Variability",
+        "Flexibility"
+      ],
+      "answer": 1,
+      "hint": "Opposite of being able to mutate data.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0021",
+      "text": "What are functions that can take other functions as arguments called?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "First-class functions",
+        "Higher-order functions",
+        "Pure functions",
+        "Recursive functions"
+      ],
+      "answer": 1,
+      "hint": "These functions operate on other functions.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0022",
+      "text": "Which of these is a purely functional programming language?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Java",
+        "C++",
+        "Haskell",
+        "Python"
+      ],
+      "answer": 2,
+      "hint": "It enforces immutability and no side effects.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0023",
+      "text": "What is a \"pure function\" in functional programming?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "A function with no parameters",
+        "A function that always gives same output for same input with no side effects",
+        "A function that modifies global state",
+        "A function that only works with numbers"
+      ],
+      "answer": 1,
+      "hint": "It relies only on its inputs and causes no external changes.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0024",
+      "text": "Instead of loops, what technique do functional languages commonly use for repetition?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Iteration",
+        "Recursion",
+        "Goto statements",
+        "Function overloading"
+      ],
+      "answer": 1,
+      "hint": "It is the repeated application of a function to itself.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0025",
+      "text": "The ability to treat functions like any other value is known as:",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Higher-order functions",
+        "First-class functions",
+        "Pure functions",
+        "Lambda functions"
+      ],
+      "answer": 1,
+      "hint": "They can be passed as arguments, returned, and assigned to variables.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0026",
+      "text": "What is the name for applying a function to each element in a collection?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Filter",
+        "Reduce",
+        "Map",
+        "Fold"
+      ],
+      "answer": 2,
+      "hint": "It transforms each element independently.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0027",
+      "text": "What is a \"side effect\" in functional programming?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Any change to state outside the function",
+        "A function that returns multiple values",
+        "Using recursion instead of loops",
+        "A function that takes long time to execute"
+      ],
+      "answer": 0,
+      "hint": "Think of modifying global variables, printing, or I/O.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0028",
+      "text": "What is a \"closure\" in functional programming?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "A function that ends the program",
+        "A function that captures its creation environment",
+        "A function with no parameters",
+        "A function that always returns the same value"
+      ],
+      "answer": 1,
+      "hint": "It remembers the variables from where it was defined.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0029",
+      "text": "What does \"composition\" refer to in functional programming?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Combining two or more functions to form a new function",
+        "The use of inheritance between classes",
+        "Defining functions inside a loop",
+        "Modifying the global state"
+      ],
+      "answer": 0,
+      "hint": "It allows building complex logic from simple, reusable functions.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0030",
+      "text": "What does OOP organize code into?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Functions and procedures",
+        "Objects containing data and behavior",
+        "Mathematical expressions",
+        "Event handlers"
+      ],
+      "answer": 1,
+      "hint": "Objects bundle attributes and methods.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0031",
+      "text": "In OOP, what are classes?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Instances of objects",
+        "Blueprints or templates for creating objects",
+        "Functions that operate on data",
+        "Types of variables"
+      ],
+      "answer": 1,
+      "hint": "They define the structure and behavior for all objects created from them.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0032",
+      "text": "What does encapsulation mean in OOP?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Hiding implementation details",
+        "Wrapping data and methods into a single unit",
+        "Creating multiple instances",
+        "Inheriting from parent classes"
+      ],
+      "answer": 1,
+      "hint": "Think of a class bundling fields and methods.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0033",
+      "text": "What is the use of constructors in OOP?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "To destroy objects",
+        "To initialize objects",
+        "To inherit from other classes",
+        "To override methods"
+      ],
+      "answer": 1,
+      "hint": "It is a special method called when an object is created.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0034",
+      "text": "What is polymorphism in OOP primarily responsible for?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Allowing multiple inheritance between classes",
+        "Allowing an object to take on many forms",
+        "Protecting data from unauthorized access",
+        "Defining a blueprint for creating objects"
+      ],
+      "answer": 1,
+      "hint": "It means 'many forms'.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0035",
+      "text": "Which best explains abstraction in OOP?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Hiding internal details and showing essential features",
+        "Creating multiple copies of objects",
+        "Making all methods public",
+        "Using global variables"
+      ],
+      "answer": 0,
+      "hint": "It focuses on the 'what' rather than the 'how'.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0036",
+      "text": "A class can implement what?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Other classes",
+        "Interfaces",
+        "Functions only",
+        "Global variables"
+      ],
+      "answer": 1,
+      "hint": "It specifies a contract for a class to follow.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0037",
+      "text": "If a base class declares a method as final, what does that imply?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "The method must be overridden",
+        "The method cannot be overridden by child classes",
+        "The method is abstract",
+        "The method is static"
+      ],
+      "answer": 1,
+      "hint": "It locks the implementation in the base class.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0038",
+      "text": "What happens when an object is passed by reference?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Destructor is not called",
+        "Destructor is called at the end of the function",
+        "Destructor is called when called explicitly",
+        "Destructor is called when function is out of scope"
+      ],
+      "answer": 0,
+      "hint": "Passing by reference does not create a new object instance that needs destruction.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0039",
+      "text": "In OOP, late binding happens when:",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "A method is chosen at compile time",
+        "A method is chosen at runtime based on object type",
+        "A method is never called",
+        "A method is static"
+      ],
+      "answer": 1,
+      "hint": "This is what enables runtime polymorphism via virtual methods.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0040",
+      "text": "What is the fundamental concept behind imperative programming?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Using mathematical expressions",
+        "Using statements that change program state",
+        "Describing what the result should be",
+        "Using objects and classes"
+      ],
+      "answer": 1,
+      "hint": "The program consists of a sequence of commands.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0041",
+      "text": "What control structure is used for repetition in imperative programming?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Recursion",
+        "Loops",
+        "Pattern matching",
+        "Function composition"
+      ],
+      "answer": 1,
+      "hint": "The use of `for`, `while`, or `do-while`.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0042",
+      "text": "Which is an example of imperative programming language?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "HTML",
+        "SQL",
+        "C",
+        "Haskell"
+      ],
+      "answer": 2,
+      "hint": "C focuses on explicit, step-by-step instructions.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0043",
+      "text": "In imperative programming, what is an explicit instruction that changes state?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Expression",
+        "Statement",
+        "Declaration",
+        "Function"
+      ],
+      "answer": 1,
+      "hint": "It performs an action, such as an assignment or control flow.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0044",
+      "text": "In memory management, what is the key difference between the stack and the heap?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Stack = managed automatically, heap = managed manually",
+        "Stack = global variables, heap = local variables",
+        "Stack is faster than heap",
+        "There is no difference"
+      ],
+      "answer": 0,
+      "hint": "Think about who is responsible for allocation/deallocation.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0045",
+      "text": "Why is \"goto\" generally discouraged in modern imperative programming?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "It’s too slow",
+        "It can create unreadable \"spaghetti code\"",
+        "It doesn’t work in most languages",
+        "It’s a security risk"
+      ],
+      "answer": 1,
+      "hint": "It makes program flow unpredictable.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0046",
+      "text": "What is an \"algorithm\" in imperative programming?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "A step-by-step procedure expressed as commands",
+        "A mathematical proof",
+        "A type of data structure",
+        "A programming language"
+      ],
+      "answer": 0,
+      "hint": "It's the recipe of steps to achieve a result.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0047",
+      "text": "What is the difference between ++i and i++?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "++i increments before use, i++ increments after use",
+        "++i works only with integers, i++ works with all types",
+        "There is no difference",
+        "++i is faster in all cases"
+      ],
+      "answer": 0,
+      "hint": "This is about when the side effect occurs relative to the value being used.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0048",
+      "text": "What is a \"race condition\" in concurrent programming?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "When threads run at different speeds",
+        "When output depends on non-deterministic timing",
+        "When programs compete for memory",
+        "When functions call each other recursively"
+      ],
+      "answer": 1,
+      "hint": "This occurs when multiple threads access shared data.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0049",
+      "text": "What is the \"von Neumann bottleneck\"?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Performance limitation from CPU-memory separation",
+        "Network latency issues",
+        "Disk I/O limitations",
+        "Memory allocation problems"
+      ],
+      "answer": 0,
+      "hint": "It refers to the single sequential data path between the CPU and memory.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0050",
+      "text": "What is the core focus of declarative programming?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Describing how to achieve results step-by-step",
+        "Describing what the result should be",
+        "Using objects and methods",
+        "Changing program state"
+      ],
+      "answer": 1,
+      "hint": "The focus is on the desired result, not the process.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0051",
+      "text": "How does a declarative program primarily express its logic?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Through sequences of commands",
+        "Through expressions and declarations",
+        "Through object instantiation",
+        "Through loop constructs"
+      ],
+      "answer": 1,
+      "hint": "It uses definitions and rules.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0052",
+      "text": "Why is HTML considered declarative?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "It describes web page structure, not how to draw it",
+        "It uses variables and loops",
+        "It’s a programming language",
+        "It can perform calculations"
+      ],
+      "answer": 0,
+      "hint": "You declare elements and attributes, but the browser handles the 'how' of rendering.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0053",
+      "text": "How is state change managed in declarative programs?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Through direct variable assignment",
+        "Using recursion and passing updated state as parameters",
+        "Using global variables",
+        "Through method calls on objects"
+      ],
+      "answer": 1,
+      "hint": "Due to immutability, a new state is returned, often via recursion.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0054",
+      "text": "What does \"referential transparency\" guarantee?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Functions can be replaced with their resulting values",
+        "All functions are pure",
+        "Variables never change",
+        "Programs always terminate"
+      ],
+      "answer": 0,
+      "hint": "It means an expression can be replaced by its value without changing the program's behavior.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0055",
+      "text": "How do declarative languages handle list processing?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Through loops and indexes",
+        "Through higher-order functions like map, filter, reduce",
+        "Through pointer arithmetic",
+        "Through array mutations"
+      ],
+      "answer": 1,
+      "hint": "These functions process collections in a declarative way.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0056",
+      "text": "What is a common criticism of declarative languages?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "They are too verbose",
+        "They can lead to inefficient execution (due to abstraction overhead)",
+        "They are difficult to understand",
+        "They don’t support recursion"
+      ],
+      "answer": 1,
+      "hint": "The 'how' of execution is hidden, which can sometimes be less performant.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0057",
+      "text": "Why is SQL considered declarative?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "The query optimizer chooses execution algorithm",
+        "It uses procedural constructs",
+        "It requires specifying implementation details",
+        "It’s a low-level language"
+      ],
+      "answer": 0,
+      "hint": "You specify *what* data you want, and the database figures out *how* to get it.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0058",
+      "text": "What do modern UI frameworks like React emphasize?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Describing UI for given state, letting framework handle rendering",
+        "Manual DOM manipulation",
+        "Direct state mutation",
+        "Imperative rendering commands"
+      ],
+      "answer": 0,
+      "hint": "They focus on the desired UI state, which is a declarative approach.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0059",
+      "text": "How does Prolog primarily express a problem’s logic?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Through a set of facts and rules",
+        "Through a sequence of commands that manipulate state",
+        "Through nested loop constructs",
+        "Through object creation and method calls"
+      ],
+      "answer": 0,
+      "hint": "Prolog is a logic programming language.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0060",
+      "text": "What characterizes event-driven programs?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Flow determined by sequential execution",
+        "Flow determined by events like user actions",
+        "Use of mathematical functions",
+        "Object inheritance hierarchies"
+      ],
+      "answer": 1,
+      "hint": "The program waits for external stimuli to act.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0061",
+      "text": "Which is a common example of an event in a GUI?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "A function call",
+        "A mouse click or key press",
+        "A variable assignment",
+        "A class definition"
+      ],
+      "answer": 1,
+      "hint": "These are user interactions that trigger a response.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0062",
+      "text": "Which application MOST likely uses event-driven programming?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "A batch data processor",
+        "A command-line calculator",
+        "A web page responding to button clicks",
+        "A physics simulation"
+      ],
+      "answer": 2,
+      "hint": "Interactive GUI applications are typically event-driven.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0063",
+      "text": "What is the main component of an event-driven system that continually monitors for events?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Event generator",
+        "Event handler",
+        "Event loop",
+        "Callback function"
+      ],
+      "answer": 2,
+      "hint": "It is the central piece that manages the queue and dispatching.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0064",
+      "text": "In an event-driven system, what is an \"Event Handler\"?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "The main program loop",
+        "The piece of code that responds to a specific event",
+        "A system that generates events",
+        "A variable that stores the event's state"
+      ],
+      "answer": 1,
+      "hint": "It's the function or method that executes when an event occurs.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0065",
+      "text": "What is \"asynchronous\" programming often associated with in event-driven systems?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Code that runs simultaneously",
+        "Non-blocking operations that wait for external resources",
+        "Sequential execution of commands",
+        "Immediate return of function results"
+      ],
+      "answer": 1,
+      "hint": "It allows the program to continue executing other tasks while waiting.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0066",
+      "text": "What is JavaScript’s primary mechanism for handling asynchronous operations?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Goto statements",
+        "Promises and async/await",
+        "Synchronous function calls",
+        "Global variables"
+      ],
+      "answer": 1,
+      "hint": "These are modern patterns for managing asynchronous code execution.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0067",
+      "text": "How does \"event bubbling\" work in DOM?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Event starts at root and moves to target",
+        "Event starts at target and propagates outward",
+        "Events are processed in random order",
+        "Only one event can be processed at a time"
+      ],
+      "answer": 1,
+      "hint": "The event is checked by the target element and then by its ancestors.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0068",
+      "text": "What is a performance pitfall in single-threaded event-driven systems?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Event loop can be blocked by long operations",
+        "Too many events cause memory leaks",
+        "Events are processed too quickly",
+        "Callback functions are too small"
+      ],
+      "answer": 0,
+      "hint": "A single long-running task will freeze the entire application.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0069",
+      "text": "What is \"inversion of control\" in event-driven programming?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Programmer controls all program flow",
+        "Framework’s event loop controls program flow",
+        "Events control variable values",
+        "Functions control object creation"
+      ],
+      "answer": 1,
+      "hint": "The framework calls the developer's code (handlers), not the other way around.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0070",
+      "text": "When mapping OOP \"Classes\" to Procedural C, what data structure is primarily used to hold the attributes?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Array",
+        "Struct",
+        "Union",
+        "Enum"
+      ],
+      "answer": 1,
+      "hint": "A C structure groups variables.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0071",
+      "text": "In Declarative Prolog, because there is no concept of an \"object instance,\" how are objects typically represented?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Facts with compound terms",
+        "Arrays with named properties",
+        "Global variables",
+        "Function closures"
+      ],
+      "answer": 0,
+      "hint": "Prolog is based on logic, facts, and rules.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0072",
+      "text": "What is the equivalent of an OOP \"Attribute\" or \"Field\" in Functional Programming?",
+      "difficulty": "EASY",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Global constant definitions",
+        "Return values of pure functions",
+        "Immutable data structures",
+        "Variables within a lexical scope"
+      ],
+      "answer": 3,
+      "hint": "FP uses local values passed to functions.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0073",
+      "text": "How can one simulate an OOP \"Method\" (a function tied to an object) inside a C struct?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "By declaring the function inside the struct definition",
+        "By using Function Pointers as struct members",
+        "By using C++ classes",
+        "By using global goto statements"
+      ],
+      "answer": 1,
+      "hint": "This allows the behavior to be encapsulated with the data.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0074",
+      "text": "To simulate \"Inheritance\" (e.g., Boss inherits from Employee) in C, what technique is often used?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "The `extends` keyword",
+        "Composition: Embedding the base struct (Employee) as the first member of the derived struct (Boss)",
+        "Copying and pasting code into every new file",
+        "Linking multiple binary files"
+      ],
+      "answer": 1,
+      "hint": "This is C's form of 'has-a' that can simulate 'is-a'.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0075",
+      "text": "Since Prolog is immutable, how is a state change (like `increaseSalary`) typically handled compared to OOP?",
+      "difficulty": "MEDIUM",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "By directly modifying the variable in memory",
+        "By creating a new structure with updated values or using `retract` and `assert` to modify the knowledge base",
+        "By using a loop",
+        "It is impossible to process data in Prolog"
+      ],
+      "answer": 1,
+      "hint": "You can't change facts directly, you must assert new ones or create new values.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0076",
+      "text": "Which C mechanism allows for a form of Polymorphism (generic behavior)?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Void pointers (`void*`) or Function Pointers allowing different implementations",
+        "The `virtual` keyword",
+        "Method Overloading",
+        "Automatic Garbage Collection"
+      ],
+      "answer": 0,
+      "hint": "These allow a function to operate on data of any type.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0077",
+      "text": "Why is the mapping of OOP methods to Prolog considered \"Partial\" or conceptually different?",
+      "difficulty": "HARD",
+      "category": "THEORY",
+      "type": "NORMAL",
+      "options": [
+        "Prolog cannot perform math",
+        "Prolog uses unification over method dispatch",
+        "Prolog has no functions, only predicates",
+        "Prolog requires explicit method binding"
+      ],
+      "answer": 1,
+      "hint": "Prolog's core mechanism is pattern matching and logical deduction.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0078",
+      "text": "What is the output of the following C code?\n```c\nint main() {\n    int x = 1;\n    if (x > 0)\n        printf(\"A\");\n    else if (x == 1)\n        printf(\"B\");\n    else\n        printf(\"C\");\n    return 0;\n}\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "Compilation Error"
+      ],
+      "answer": 0,
+      "hint": "The first `if` condition is met and executes.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0079",
+      "text": "What is the output of the following C code?\n```c\nint main() {\n    char grade = 'B';\n    switch(grade) {\n        case 'A':\n            printf(\"A\");\n            break;\n        case 'B':\n            printf(\"B\");\n        case 'C':\n            printf(\"C\");\n        default:\n            printf(\"D\");\n    }\n    return 0;\n}\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "B",
+        "B C D",
+        "B C",
+        "Compilation Error"
+      ],
+      "answer": 1,
+      "hint": "Note the missing `break` after `case 'B'` causing fall-through.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0080",
+      "text": "What is the output of the following C code?\n```c\nint main() {\n    int a = 5;\n    int b = a++ + 10;\n    printf(\"%d %d\", a, b);\n    return 0;\n}\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "5 15",
+        "6 16",
+        "6 15",
+        "5 16"
+      ],
+      "answer": 2,
+      "hint": "Post-increment (`a++`) uses the original value of `a` for the sum.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0081",
+      "text": "What is the output of the following C code?\n```c\nint main() {\n    int x=0;\n    while(x < 3) {\n        x++;\n        printf(\"%d \", x);\n    }\n    return 0;\n}\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "1 2 3",
+        "0 1 2",
+        "1 2 3 4",
+        "0 1 2 3"
+      ],
+      "answer": 0,
+      "hint": "The variable `x` is incremented before it is printed.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0082",
+      "text": "What is the output of the following C code?\n```c\nint main() {\n    printf(\"%d\", 15 / 4);\n    return 0;\n}\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "3.75",
+        "3",
+        "4",
+        "0"
+      ],
+      "answer": 1,
+      "hint": "Integer division truncates the decimal part.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0083",
+      "text": "Given a user enters \"10\", which C code correctly reads and prints it?",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`scanf(\"%d\", num);`",
+        "`scanf(\"%d\", &num);`",
+        "`printf(\"%d\", &num);`",
+        "`read(\"%d\", num);`"
+      ],
+      "answer": 1,
+      "hint": "The `scanf` function requires the address of the variable.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0084",
+      "text": "Which C header file includes standard input/output functions like `printf`?",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`<stdlib.h>`",
+        "`<string.h>`",
+        "`<stdio.h>`",
+        "`<math.h>`"
+      ],
+      "answer": 2,
+      "hint": "This file is for **st**andard **i**nput/**o**utput.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0085",
+      "text": "Which C preprocessor directive includes external code libraries?\n\n```c\n____ <stdio.h>\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`include <stdio.h>`",
+        "`using namespace <stdio.h>`",
+        "`#include <stdio.h>`",
+        "`#import <stdio.h>`"
+      ],
+      "answer": 2,
+      "hint": "This is the standard preprocessor command for inclusion.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0086",
+      "text": "Which C data type holds characters and small integers?\n\n```c\n____ c = 'A';\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`int`",
+        "`float`",
+        "`double`",
+        "`char`"
+      ],
+      "answer": 3,
+      "hint": "Single characters are stored using this data type.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0087",
+      "text": "Which C operator tests for equality?\n\n```c\nif (x ____ 5)\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`=`",
+        "`->`",
+        "`==`",
+        "`!=`"
+      ],
+      "answer": 2,
+      "hint": "A single equals sign is for assignment.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0088",
+      "text": "What is the output of the following C code when `factorial(4)` is called?\n\n```c\nint factorial(int n) {\n    if (n <= 1)\n        return 1;\n    return n * factorial(n-1);\n}\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "12",
+        "10",
+        "24",
+        "0"
+      ],
+      "answer": 2,
+      "hint": "Calculate $4 \\times 3 \\times 2 \\times 1$.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0089",
+      "text": "What is the output if `count()` is called 3 times?\n\n```c\nvoid count() {\n    static int x=0;\n    x++;\n    printf(\"%d \", x);\n}\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "1 1 1",
+        "1 2 3",
+        "0 1 2",
+        "3 2 1"
+      ],
+      "answer": 1,
+      "hint": "A static variable retains its value between function calls.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0090",
+      "text": "Given `float pi = 3.14159;`, which C format specifier prints \"3.14\"?",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`printf(\"%f\", pi);`",
+        "`printf(\"%.2f\", pi);`",
+        "`printf(\"%d\", pi);`",
+        "`printf(\"%.3f\", pi);`"
+      ],
+      "answer": 1,
+      "hint": "The `.2` specifies two decimal places.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0091",
+      "text": "Which C code converts the character 'A' to its integer ASCII value (65) and prints it?",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`printf(\"%c\", 'A');`",
+        "`printf(\"%s\", 'A');`",
+        "`printf(\"%d\", 'A');`",
+        "`printf(\"%f\", 'A');`"
+      ],
+      "answer": 2,
+      "hint": "The `%d` format specifier prints the integer value.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0092",
+      "text": "Which C snippet creates a pointer variable `ptr` that can point to an integer?",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`int* ptr;`",
+        "`int ptr;`",
+        "`*int ptr;`",
+        "`pointer int ptr;`"
+      ],
+      "answer": 0,
+      "hint": "The asterisk denotes a pointer type.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0093",
+      "text": "Which C keyword makes a local variable maintain its value between function calls?\n\n```c\nvoid f() {\n    ____ int x = 0;\n}\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`auto`",
+        "`extern`",
+        "`volatile`",
+        "`static`"
+      ],
+      "answer": 3,
+      "hint": "This storage class preserves the variable's value.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0094",
+      "text": "Which C symbol must be placed at the end of every statement?\n\n```c\nint x = 5____\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`:`",
+        "`(`",
+        "`{`",
+        "`;`"
+      ],
+      "answer": 3,
+      "hint": "This is the statement terminator.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0095",
+      "text": "What is the output of the following C code?\n\n```c\nint arr[] = {10, 20, 30, 40, 50};\nint *ptr = arr + 2;\nprintf(\"%d %d\", *(ptr-1), *(ptr+1));\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "10 30",
+        "20 40",
+        "30 50",
+        "20 50"
+      ],
+      "answer": 1,
+      "hint": "`ptr` points to 30. Use pointer arithmetic.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0096",
+      "text": "Which C statement correctly prints the memory address of variable 'x' in hexadecimal?",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`printf(\"%u\", x);`",
+        "`printf(\"%p\", &x);`",
+        "`printf(\"%x\", x);`",
+        "`printf(\"%d\", &x);`"
+      ],
+      "answer": 1,
+      "hint": "The `%p` format specifier is used for pointers/addresses.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0097",
+      "text": "Given `int x = 10;`, which C macro definition results in 20 when calling `DOUBLE(x)`?",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`#define DOUBLE(a) a + 2`",
+        "`#define DOUBLE(a) a * a`",
+        "`#define DOUBLE(a) (a * 2)`",
+        "`#define DOUBLE(a) a / 2`"
+      ],
+      "answer": 2,
+      "hint": "Use parentheses for safety in macro definitions.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0098",
+      "text": "Which C function is used to dynamically allocate memory?\n\n```c\nint *p = (int*)____(sizeof(int));\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`alloc`",
+        "`malloc`",
+        "`calloc`",
+        "`new`"
+      ],
+      "answer": 1,
+      "hint": "`malloc` is the primary function for dynamic memory allocation.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0099",
+      "text": "Which C function call returns the length (5) of the string \"Hello\"?",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`size(\"Hello\");`",
+        "`length(\"Hello\");`",
+        "`strlen(\"Hello\");`",
+        "`sizeof(\"Hello\");`"
+      ],
+      "answer": 2,
+      "hint": "This function calculates the number of characters, excluding the null terminator.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0100",
+      "text": "What is the output of the following Java code?\n\n```java\nString s = \"Hello\";\nSystem.out.println(s.substring(1, 3));\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "H e",
+        "el",
+        "ell",
+        "Hello"
+      ],
+      "answer": 1,
+      "hint": "The end index (3) is exclusive in Java `substring`.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0101",
+      "text": "What is the output of the following Java code?\n\n```java\nint x = 10;\nString result = (x > 5) ? \"High\" : \"Low\";\nSystem.out.println(result);\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "Low",
+        "High",
+        "Error",
+        "Null"
+      ],
+      "answer": 1,
+      "hint": "The conditional operator evaluates true since $10 > 5$.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0102",
+      "text": "What is the output of the following Java code?\n\n```java\nint i=0;\ndo {\n    System.out.print(i + \" \");\n    i++;\n} while (i<3);\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "0 1 2",
+        "1 2 3",
+        "0 1 2 3",
+        "Infinite Loop"
+      ],
+      "answer": 0,
+      "hint": "A `do-while` loop executes at least once.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0103",
+      "text": "Which is the correct entry point method signature in Java?",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`public void main(String[] args)`",
+        "`static void main(String args)`",
+        "`public static void main(String[] args)`",
+        "`public static int main(String[] args)`"
+      ],
+      "answer": 2,
+      "hint": "This is the mandatory signature for the JVM to start execution.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0104",
+      "text": "Given `int[] arr = {1, 2, 3, 4, 5};`, which Java property gives the size (5)?",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`arr.size`",
+        "`arr.length()`",
+        "`arr.length`",
+        "`arr.count`"
+      ],
+      "answer": 2,
+      "hint": "Array size is a public field in Java.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0105",
+      "text": "Which Java keyword makes a class impossible to instantiate directly?\n\n```java\n____ class Animal { }\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`static`",
+        "`final`",
+        "`abstract`",
+        "`void`"
+      ],
+      "answer": 2,
+      "hint": "This type of class must be subclassed.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0106",
+      "text": "Which Java keyword creates a new object instance?\n\n```java\nDog d = ____ Dog();\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`create`",
+        "`new`",
+        "`make`",
+        "`init`"
+      ],
+      "answer": 1,
+      "hint": "This operator invokes the class constructor.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0107",
+      "text": "Which Java keyword is used to access the members of the current object?\n\n```java\n____.value = value;\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`super`",
+        "`parent`",
+        "`class`",
+        "`this`"
+      ],
+      "answer": 3,
+      "hint": "It is a reference to the current object.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0108",
+      "text": "What is the output of `new Dog().sound();` in the following Java code?\n\n```java\nclass Animal { void sound() { System.out.println(\"Animal makes a sound\"); } }\nclass Dog extends Animal { void sound() { System.out.println(\"Dog barks\"); } }\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "Animal makes a sound",
+        "Dog barks",
+        "Compilation Error",
+        "Runtime Exception"
+      ],
+      "answer": 1,
+      "hint": "The subclass method overrides the superclass method.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0109",
+      "text": "What is the output of the following Java code?\n\n```java\nint[] arr = {1, 2, 3};\nint sum = 0;\nfor (int i : arr) {\n    sum += i;\n}\nSystem.out.println(sum);\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "1 2 3",
+        "6",
+        "3",
+        "Compilation Error"
+      ],
+      "answer": 1,
+      "hint": "The enhanced `for` loop sums all elements.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0110",
+      "text": "Which Java method is used to get the character at index 1 of the string `String s = \"Java\";`?",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`s.charAt(1)`",
+        "`s.charAt(2)`",
+        "`s[1]`",
+        "`s.get(1)`"
+      ],
+      "answer": 0,
+      "hint": "This method returns the character at the specified index.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0111",
+      "text": "Which Java Math library function returns the square root of 9 (3.0)?",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`Math.sq(9)`",
+        "`Math.root(9)`",
+        "`Math.sqrt(9)`",
+        "`Math.pow(9, 2)`"
+      ],
+      "answer": 2,
+      "hint": "This static method computes the square root.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0112",
+      "text": "Which Java keyword is used for inheritance?\n\n```java\nclass Car ____ Vehicle { }\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`implements`",
+        "`inherits`",
+        "`extends`",
+        "`uses`"
+      ],
+      "answer": 2,
+      "hint": "This keyword establishes an 'is-a' relationship.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0113",
+      "text": "Which Java keyword catches the exception in a try-block?\n\n```java\ntry { risk(); } ____ (Exception e) { handle(); }\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`handle`",
+        "`except`",
+        "`catch`",
+        "`throw`"
+      ],
+      "answer": 2,
+      "hint": "This block handles potential errors.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0114",
+      "text": "Which Java keyword sends a value back to the caller from a method?\n\n```java\npublic int getX() { ____ 10; }\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`send`",
+        "`return`",
+        "`yield`",
+        "`break`"
+      ],
+      "answer": 1,
+      "hint": "This statement exits a method and optionally returns a value.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0115",
+      "text": "What is the output of the following Java code?\n\n```java\nString s1 = \"hello\";\nString s3 = new String(\"hello\");\nSystem.out.println(s1 == s3);\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "true",
+        "false",
+        "null",
+        "Compilation Error"
+      ],
+      "answer": 1,
+      "hint": "The `==` operator compares memory references for objects.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0116",
+      "text": "What is the output of the following Java code?\n\n```java\npublic class MyClass {\n    public static void main(String[] args) {\n        try {\n            int x = 10 / 0;\n        } catch (ArithmeticException e) {\n            System.out.print(\"A\");\n        } finally {\n            System.out.print(\"B\");\n        }\n    }\n}\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "A",
+        "B",
+        "AB",
+        "Error"
+      ],
+      "answer": 2,
+      "hint": "The `finally` block executes regardless of whether an exception occurred.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0117",
+      "text": "What type of error occurs when you try to reassign a final variable in Java?\n\n```java\nfinal int MAX = 10;\nMAX = 20; // This causes a ____ error\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "Runtime",
+        "Compilation",
+        "Logic",
+        "System"
+      ],
+      "answer": 1,
+      "hint": "The compiler prevents modification of a `final` field.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0118",
+      "text": "Complete the instantiation for a Java Linked List.\n\n```java\nList<String> list = new ____<>();\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "ArrayList",
+        "LinkedList",
+        "List",
+        "Vector"
+      ],
+      "answer": 1,
+      "hint": "`LinkedList` is a concrete class that implements the `List` interface.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0119",
+      "text": "Which Java keyword declares that a method might throw an exception?\n\n```java\npublic void method() ____ IOException { }\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`throw`",
+        "`throws`",
+        "`catches`",
+        "`handles`"
+      ],
+      "answer": 1,
+      "hint": "This keyword is part of the method signature to indicate checked exceptions.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0120",
+      "text": "What is the output of the following Python code?\n\n```python\ns = \"Python\"\nprint(s[1:4])\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "Pyt",
+        "ytho",
+        "yth",
+        "hon"
+      ],
+      "answer": 2,
+      "hint": "Slicing includes index 1 up to (but not including) index 4.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0121",
+      "text": "Given `lst = [1,2,3,4,5]`, which Python function gives the item count (5)?",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`count(lst)`",
+        "`lst.size()`",
+        "`len(lst)`",
+        "`lst.length`"
+      ],
+      "answer": 2,
+      "hint": "This built-in function returns the length of a sequence.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0122",
+      "text": "Which keyword is used to define a function in Python?\n\n```python\n____ my_func(): pass\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`func`",
+        "`function`",
+        "`def`",
+        "`create`"
+      ],
+      "answer": 2,
+      "hint": "This is short for 'define'.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0123",
+      "text": "Which symbol is used to create a comment in Python?\n\n```python\n____ This is a comment\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`//`",
+        "`/*`",
+        "`*`",
+        "`#`"
+      ],
+      "answer": 3,
+      "hint": "This symbol is used for single-line comments.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0124",
+      "text": "What is the output of the following Python code?\n\n```python\nx = [1, 2, 3]\nx.append(4)\nprint(len(x))\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "Error"
+      ],
+      "answer": 1,
+      "hint": "The list size increases after the `append` operation.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0125",
+      "text": "Which exception class catches division by zero errors in Python?\n\n```python\ntry:\n    x = 1/0\nexcept ____:\n    print(\"Error\")\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "Error",
+        "DivisionError",
+        "ZeroDivisionError",
+        "MathError"
+      ],
+      "answer": 2,
+      "hint": "This class specifically handles division by zero.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0126",
+      "text": "How do you get the remainder of $10 \\div 3$ in Python?\n\n```python\n10 ____ 3\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`//`",
+        "`/`",
+        "`^`",
+        "`%`"
+      ],
+      "answer": 3,
+      "hint": "This is the modulo operator.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0127",
+      "text": "What is the output of the following Python code?\n\n```python\ndata = {'a': 1, 'b': 2}\nprint(data.get('c', 0))\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "2",
+        "`None`",
+        "0",
+        "Error"
+      ],
+      "answer": 2,
+      "hint": "The `get` method returns a default value if the key is not found.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0128",
+      "text": "Given `x = [1, 10, 2, 20]`, which Python code filters for numbers > 5?",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`map(lambda a: a > 5, x)`",
+        "`filter(lambda a: a > 5, x)`",
+        "`reduce(lambda a: a > 5, x)`",
+        "`x.select(a > 5)`"
+      ],
+      "answer": 1,
+      "hint": "The `filter` function is used to select items that satisfy a condition.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0129",
+      "text": "How do you specify the parent class 'Animal' in a Python class definition?\n\n```python\nclass Dog(____): pass\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`extends Animal`",
+        "`Animal`",
+        "`implements Animal`",
+        "`super Animal`"
+      ],
+      "answer": 1,
+      "hint": "Inheritance is specified inside the parentheses.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0130",
+      "text": "What is the output of the following JavaScript code?\n\n```javascript\nconst combined = [1, 2, 3, 4, 5, 6];\nconst [first, , third] = combined;\nconsole.log(first, third);\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "1 2",
+        "1 3",
+        "1 4",
+        "1 5"
+      ],
+      "answer": 1,
+      "hint": "Array destructuring skips the second element.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0131",
+      "text": "What is the output of the following JavaScript code?\n\n```javascript\nlet x = 10; var y = 20;\nif (true) {\n    let x = 5;\n    var y = 50;\n}\nconsole.log(x, y);\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "5 50",
+        "10 20",
+        "10 50",
+        "5 20"
+      ],
+      "answer": 2,
+      "hint": "`let` is block-scoped, `var` is function-scoped.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0132",
+      "text": "Given `obj = {a:1}`, which JavaScript method converts this object to a JSON string?",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`JSON.parse(obj)`",
+        "`JSON.stringify(obj)`",
+        "`obj.toString()`",
+        "`JSON.toText(obj)`"
+      ],
+      "answer": 1,
+      "hint": "This method serializes a JavaScript value to a JSON string.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0133",
+      "text": "Given `arr = [1,2,3]`, which JavaScript method iterates over each item?",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`arr.loop()`",
+        "`arr.forEach()`",
+        "`arr.each()`",
+        "`arr.iterate()`"
+      ],
+      "answer": 1,
+      "hint": "This is the standard array iteration method.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0134",
+      "text": "Which symbol completes the Arrow Function syntax in JavaScript?\n\n```javascript\nconst add = (a, b) ____ a + b;\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`->`",
+        "`=>`",
+        "`return`",
+        "`:`"
+      ],
+      "answer": 1,
+      "hint": "This is the token that defines an arrow function.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0135",
+      "text": "Which JavaScript operator creates a new Number object wrapper?\n\n```javascript\nlet num = ____ Number(\"10\");\n```",
+      "difficulty": "EASY",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`static`",
+        "`new`",
+        "`make`",
+        "`this`"
+      ],
+      "answer": 1,
+      "hint": "The `new` keyword is used for constructing object wrappers.",
+      "snippet": "",
+      "timeLimit": 25
+    },
+    {
+      "id": "0136",
+      "text": "What is the output of the following JavaScript code?\n\n```javascript\nlet x = 1;\nfunction f() {\n    x = 2;\n    return x;\n}\nf();\nconsole.log(x);\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "1",
+        "2",
+        "undefined",
+        "Error"
+      ],
+      "answer": 1,
+      "hint": "The function modifies the global `x` variable.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0137",
+      "text": "Given `arr = [1, 2, 3, 4, 5]`, which JavaScript method filters for numbers greater than 3?",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`arr.map((x) => x > 3)`",
+        "`arr.filter((x) => x > 3)`",
+        "`arr.reduce((x) => x > 3)`",
+        "`arr.find((x) => x > 3)`"
+      ],
+      "answer": 1,
+      "hint": "The `filter` method creates a new array with all elements that pass the test.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0138",
+      "text": "Which JavaScript method selects an HTML element by its ID \"demo\"?\n\n```javascript\ndocument.____(\"demo\")\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`find`",
+        "`getElementById`",
+        "`select`",
+        "`get`"
+      ],
+      "answer": 1,
+      "hint": "This is the primary DOM method for selecting an element by ID.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0139",
+      "text": "Which operator is used for optional chaining in JavaScript?\n\n```javascript\nlet val = obj ____ key;\n```",
+      "difficulty": "MEDIUM",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`..`",
+        "`::`",
+        "`??`",
+        "`?.`"
+      ],
+      "answer": 3,
+      "hint": "It safely accesses properties that might be `null` or `undefined`.",
+      "snippet": "",
+      "timeLimit": 40
+    },
+    {
+      "id": "0140",
+      "text": "What is the first thing printed to the console in the following JavaScript code?\n\n```javascript\nlet p = new Promise(resolve => setTimeout(() => resolve(\"done\"), 1));\np.then(console.log);\nconsole.log(\"pending\");\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "done",
+        "pending",
+        "undefined",
+        "Error"
+      ],
+      "answer": 1,
+      "hint": "The synchronous code executes immediately before the promise resolves.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0141",
+      "text": "What is the output of the following JavaScript code?\n\n```javascript\nfunction* generator() { yield 1; yield 2; }\nconst gen = generator();\nconsole.log(gen.next().value);\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "undefined",
+        "1",
+        "2",
+        "Error"
+      ],
+      "answer": 1,
+      "hint": "The first call to `next()` returns the value of the first `yield`.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0142",
+      "text": "Given `arr = [1, 2, 3, 4, 5]`, which JavaScript method calculates the sum (15)?",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`arr.map((a, b) => a + b)`",
+        "`arr.reduce((acc, curr) => acc + curr, 0)`",
+        "`arr.filter((a) => a + a)`",
+        "`arr.sum()`"
+      ],
+      "answer": 1,
+      "hint": "The `reduce` method applies a function against an accumulator and each element.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0143",
+      "text": "Which JavaScript keyword enables the use of 'await' inside a function?\n\n```javascript\n____ function fetchData() {\n    await api();\n}\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`sync`",
+        "`async`",
+        "`wait`",
+        "`promise`"
+      ],
+      "answer": 1,
+      "hint": "This keyword denotes a function that returns a Promise.",
+      "snippet": "",
+      "timeLimit": 60
+    },
+    {
+      "id": "0144",
+      "text": "Which JavaScript keyword makes a class the primary export of a module?\n\n```javascript\nexport ____ class MyClass {}\n```",
+      "difficulty": "HARD",
+      "category": "PRACTICAL",
+      "type": "NORMAL",
+      "options": [
+        "`main`",
+        "`primary`",
+        "`default`",
+        "`public`"
+      ],
+      "answer": 2,
+      "hint": "This allows the module to be imported without curly braces.",
+      "snippet": "",
+      "timeLimit": 60
+    }
+  ]
+}
