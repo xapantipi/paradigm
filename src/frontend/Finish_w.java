@@ -56,9 +56,10 @@ public class Finish_w extends JPanel {
 		bkgholder.add(statsPanel);
 
 		continue_b.setBounds((frame.getWidth() / 2 - continue_n.getIconWidth() / 2), 575, 250, 65);
-
 		statsPanel.setBounds(540, 300, 200, 160);
 
+		bkgholder.revalidate();
+		bkgholder.repaint();
 	}
 
 	private void setupContinueButton() {
@@ -95,68 +96,41 @@ public class Finish_w extends JPanel {
 		});
 	}
 
-	/* private JLabel buildStatsLabel(Color color) {
-		
+	private JPanel buildStatsPanel(Color color) {
 		JPanel panel = new JPanel(null);
 		panel.setOpaque(false);
-		
-		String name = (player != null)
-		
-		JLabel label = new JLabel(formatStatsText(), SwingConstants.CENTER);
-		label.setFont(statsFont);
-		label.setForeground(color);
-		label.setOpaque(false);
-		return label;
-	} */
-	
-	private JPanel buildStatsPanel(Color color) {
-	    JPanel panel = new JPanel(null);     // absolute positions inside
-	    panel.setOpaque(false);
 
-	    String name = (player != null) ? player.getName() : "Recruit";
-	    String score = (player != null) ? (player.getScore() + " RP") : "0 RP";
-	    String time = (player != null) ? formatDuration(player.getTimeCompleted()) : "00:00";
+		String name = (player != null) ? player.getName() : "Recruit";
+		String score = (player != null) ? (player.getScore() + " RP") : "0 RP";
+		String time = (player != null) ? formatDuration(player.getTimeCompleted()) : "00:00";
 
-	    nameLabel = new JLabel(name, SwingConstants.CENTER);
-	    scoreLabel = new JLabel(score, SwingConstants.CENTER);
-	    timeLabel = new JLabel(time, SwingConstants.CENTER);
+		nameLabel = new JLabel(name, SwingConstants.CENTER);
+		scoreLabel = new JLabel(score, SwingConstants.CENTER);
+		timeLabel = new JLabel(time, SwingConstants.CENTER);
 
-	    // fonts – you can tweak sizes
-	    nameLabel.setFont(statsFont.deriveFont(28f));
-	    scoreLabel.setFont(statsFont.deriveFont(40f));
-	    timeLabel.setFont(statsFont.deriveFont(24f));
+		nameLabel.setFont(statsFont.deriveFont(28f));
+		scoreLabel.setFont(statsFont.deriveFont(40f));
+		timeLabel.setFont(statsFont.deriveFont(24f));
 
-	    nameLabel.setForeground(color);
-	    scoreLabel.setForeground(color);
-	    timeLabel.setForeground(color);
+		nameLabel.setForeground(color);
+		scoreLabel.setForeground(color);
+		timeLabel.setForeground(color);
 
-	    nameLabel.setOpaque(false);
-	    scoreLabel.setOpaque(false);
-	    timeLabel.setOpaque(false);
+		nameLabel.setOpaque(false);
+		scoreLabel.setOpaque(false);
+		timeLabel.setOpaque(false);
 
-	    int w = 200;   // width of the “column” over the left square
-	    // y-positions relative to panel
-	    nameLabel.setBounds(0, 0,   w, 30);   // above the square
-	    scoreLabel.setBounds(0, 45, w, 50);   // inside the square
-	    timeLabel.setBounds(0, 120, w, 30);   // below the square
+		int w = 200;
+		nameLabel.setBounds(0, 0, w, 30);
+		scoreLabel.setBounds(0, 45, w, 50);
+		timeLabel.setBounds(0, 120, w, 30);
 
-	    panel.add(nameLabel);
-	    panel.add(scoreLabel);
-	    panel.add(timeLabel);
+		panel.add(nameLabel);
+		panel.add(scoreLabel);
+		panel.add(timeLabel);
+		panel.setPreferredSize(new Dimension(w, 160));
 
-	    // overall panel height covers all three
-	    panel.setPreferredSize(new Dimension(w, 160));
-
-	    return panel;
-	}
-
-
-	private String formatStatsText() {
-		if (player == null) {
-			return "<html><div style='text-align:center;'>Score unavailable</div></html>";
-		}
-		return "<html><div style='text-align:center;'>" + player.getName() + "<br/>" + player.getScore()
-				+ " RP · " + formatDuration(player.getTimeCompleted()) + "</div></html>";
+		return panel;
 	}
 
 	private String formatDuration(Duration duration) {
@@ -217,9 +191,10 @@ class Finish_l extends JPanel {
 		bkgholder.add(statsPanel);
 
 		continue_b.setBounds((frame.getWidth() / 2 - continue_n.getIconWidth() / 2), 575, 250, 65);
-
 		statsPanel.setBounds(540, 325, 200, 150);
 
+		bkgholder.revalidate();
+		bkgholder.repaint();
 	}
 
 	private void setupContinueButton() {
@@ -256,67 +231,41 @@ class Finish_l extends JPanel {
 		});
 	}
 
-	/* private JLabel buildStatsLabel(Color color) {
-	
+	private JPanel buildStatsPanel(Color color) {
 		JPanel panel = new JPanel(null);
 		panel.setOpaque(false);
-		
-		String name = (player != null)
-		
-		JLabel label = new JLabel(formatStatsText(), SwingConstants.CENTER);
-		label.setFont(statsFont);
-		label.setForeground(color);
-		label.setOpaque(false);
-		return label;
-	} */
 
-	private JPanel buildStatsPanel(Color color) {
-	    JPanel panel = new JPanel(null);     // absolute positions inside
-	    panel.setOpaque(false);
-	
-	    String name = (player != null) ? player.getName() : "Recruit";
-	    String score = (player != null) ? (player.getScore() + " RP") : "0 RP";
-	    String time = (player != null) ? formatDuration(player.getTimeCompleted()) : "00:00";
-	
-	    nameLabel = new JLabel(name, SwingConstants.CENTER);
-	    scoreLabel = new JLabel(score, SwingConstants.CENTER);
-	    timeLabel = new JLabel(time, SwingConstants.CENTER);
-	
-	    // fonts – you can tweak sizes
-	    nameLabel.setFont(statsFont.deriveFont(32f));
-	    scoreLabel.setFont(statsFont.deriveFont(36f));
-	    timeLabel.setFont(statsFont.deriveFont(28f));
-	
-	    nameLabel.setForeground(color);
-	    scoreLabel.setForeground(color);
-	    timeLabel.setForeground(color);
-	
-	    nameLabel.setOpaque(false);
-	    scoreLabel.setOpaque(false);
-	    timeLabel.setOpaque(false);
-	
-	    int w = 200;   // width of the “column” over the left square
-	    // y-positions relative to panel
-	    nameLabel.setBounds(0, 0,   w, 40);   // above the square
-	    scoreLabel.setBounds(0, 45, w, 50);   // inside the square
-	    timeLabel.setBounds(0, 105, w, 40);   // below the square
-	
-	    panel.add(nameLabel);
-	    panel.add(scoreLabel);
-	    panel.add(timeLabel);
-	
-	    // overall panel height covers all three
-	    panel.setPreferredSize(new Dimension(w, 150));
-	
-	    return panel;
-	}
+		String name = (player != null) ? player.getName() : "Recruit";
+		String score = (player != null) ? (player.getScore() + " RP") : "0 RP";
+		String time = (player != null) ? formatDuration(player.getTimeCompleted()) : "00:00";
 
-	private String formatStatsText() {
-		if (player == null) {
-			return "<html><div style='text-align:center;'>Keep training, recruit.</div></html>";
-		}
-		return "<html><div style='text-align:center;'>" + player.getName() + "<br/>" + player.getScore()
-				+ " PTS · " + formatDuration(player.getTimeCompleted()) + "</div></html>";
+		nameLabel = new JLabel(name, SwingConstants.CENTER);
+		scoreLabel = new JLabel(score, SwingConstants.CENTER);
+		timeLabel = new JLabel(time, SwingConstants.CENTER);
+
+		nameLabel.setFont(statsFont.deriveFont(32f));
+		scoreLabel.setFont(statsFont.deriveFont(36f));
+		timeLabel.setFont(statsFont.deriveFont(28f));
+
+		nameLabel.setForeground(color);
+		scoreLabel.setForeground(color);
+		timeLabel.setForeground(color);
+
+		nameLabel.setOpaque(false);
+		scoreLabel.setOpaque(false);
+		timeLabel.setOpaque(false);
+
+		int w = 200;
+		nameLabel.setBounds(0, 0, w, 40);
+		scoreLabel.setBounds(0, 45, w, 50);
+		timeLabel.setBounds(0, 105, w, 40);
+
+		panel.add(nameLabel);
+		panel.add(scoreLabel);
+		panel.add(timeLabel);
+		panel.setPreferredSize(new Dimension(w, 150));
+
+		return panel;
 	}
 
 	private String formatDuration(Duration duration) {

@@ -74,6 +74,10 @@ public class GameEngine {
 		}
 		Collections.shuffle(filtered, random);
 		enforceFixedQuestionStructure(filtered);
+		int maxQuestions = 15;
+		if (filtered.size() > maxQuestions) {
+			filtered = new ArrayList<>(filtered.subList(0, maxQuestions));
+		}
 		return filtered;
 	}
 

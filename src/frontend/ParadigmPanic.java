@@ -42,7 +42,8 @@ public class ParadigmPanic extends JFrame {
 		leaderboardStore = new Leaderboard();
 		questionBank = loadQuestions();
 
-		spalshS();
+		//spalshS();
+		showTitleScreen();
 
 		setLocationRelativeTo(null);
 		setVisible(true);

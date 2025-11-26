@@ -103,7 +103,7 @@ public class LeaderBoard extends JPanel {
 		categoryBox.setForeground(Color.YELLOW);
 		categoryBox.setBackground(new Color(255, 255, 255, 220));
 		categoryBox.setOpaque(true);
-		categoryBox.setRenderer(new CategoryRenderer(categoryBox.getRenderer()));
+		categoryBox.setRenderer(new CategoryRenderer());
 		categoryBox.addActionListener(e -> refreshLeaderboard());
 	}
 

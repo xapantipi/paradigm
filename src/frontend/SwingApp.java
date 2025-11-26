@@ -144,10 +144,10 @@ public class SwingApp extends JPanel{
 		bkg.add(leaderboard_b);
 		bkg.add(sound_b);
 		
-		start_b.setBounds(530, 412, 450, 100);
-		howTo_b.setBounds(530, 486, 450, 100);
-		leaderboard_b.setBounds(530, 560, 450, 100);
-		sound_b.setBounds(1350, 700, 100, 100);
+		start_b.setBounds(530, 412, 450, 100);       
+howTo_b.setBounds(530, 530, 450, 100);       // Moved down
+leaderboard_b.setBounds(530, 648, 450, 100); // Moved down
+sound_b.setBounds(1350, 700, 100, 100);
 		
 		bkg.revalidate();
 		bkg.repaint();

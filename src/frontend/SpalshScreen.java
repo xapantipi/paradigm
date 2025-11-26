@@ -1,30 +1,12 @@
 package frontend;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.Image;
-import java.awt.event.ContainerAdapter;
-import java.awt.event.ContainerEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.io.IOException;
+import java.awt.*;
+import java.awt.event.*;
 import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import javax.swing.ImageIcon;
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
-import javax.swing.Timer;
 
-public class SpalshScreen extends JPanel {
+import javax.swing.*;
+
+public class SpalshScreen extends JPanel{
 	
 	private final ParadigmPanic frame;
 	
@@ -33,15 +15,28 @@ public class SpalshScreen extends JPanel {
 	
 	private Image cloud;
 	private ImagePanel cloud1, cloud2, cloud3;
-	private JPanel title_panel; // Removed cloud1_h as it wasn't used
+	private JPanel cloud1_h;
 	
 	private Image title;
 	private ImagePanel title_holder;
+	private JPanel title_panel;
 	
 	private JLabel ins;
+	private JPanel enterHere_holder;
 	private Font g_font;
 	
-	// Animation variables
+	private void mainGameFont() {
+		try(InputStream is = getClass().getResourceAsStream("/resources/font/LowresPixel.otf")) {
+			if (is != null) {
+				Font f = Font.createFont(Font.TRUETYPE_FONT, is);
+				g_font = f.deriveFont(25f);
+			}
+		} catch (Exception ignore) {
+			//catch phrase is empty
+		}
+	}
+	
+	//moves the cloud automatically across the frame
 	private Timer cloudTimer;
 	private Timer titleTimer;
 	private int cloudSpeed = 5;
@@ -49,46 +44,45 @@ public class SpalshScreen extends JPanel {
 	private boolean cloud2stat = false;
 	private boolean cloud3stat = false;
 	
-	// Title bobbing
+	//bobbing title
 	private int titleY;
 	private int titleAmp = 10;
 	private int titleMove = 1;
 	
-	// The shared listener for clicking
-	private MouseAdapter transitionListener;
+	private boolean cloudsLaidOut = false;
 	
 	public SpalshScreen(ParadigmPanic frame) {
 		this.frame = frame;
 		
-		img = loadImage("/resources/images/splash.png");
+		img = new ImageIcon(getClass().getResource("/resources/images/splash.png")).getImage();
 		bkg = new ImagePanel(img);
+		
+		// ---------------- CLOUD SETUP-------------------
 		
 		setLayout(new BorderLayout());
 		setPreferredSize(new Dimension(img.getWidth(frame), img.getHeight(frame)));
 		add(bkg, BorderLayout.CENTER);
 		
-		// Initialize the listener once
-		transitionListener = new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				stopTimers();
-				System.out.println("Screen clicked - Transitioning!");
-				frame.showTitleScreen();
-			}
-		};
-		registerClickTarget(this);
-		registerClickTarget(bkg);
-		
-		// ---------------- CLOUD SETUP -------------------
-		cloud = loadImage("/resources/images/cloud.png");
+		cloud = new ImageIcon(getClass().getResource("/resources/images/cloud.png")).getImage();
 		
 		cloud1 = new ImagePanel(cloud);
 		cloud2 = new ImagePanel(cloud);
 		cloud3 = new ImagePanel(cloud);
 		
-		setupCloud(cloud1);
-		setupCloud(cloud2);
-		setupCloud(cloud3);
+		cloud1.setBackground(new Color(0, 0, 0, 0));
+		cloud2.setBackground(new Color(0, 0, 0, 0));
+		cloud3.setBackground(new Color(0, 0, 0, 0));
+		
+		// ---------------------- CLICK ANYWHERE TO START ------------------------------
+		
+		bkg.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				System.out.println("Screen clicked!");
+				
+				frame.showTitleScreen();
+			}
+		});
 		
 		cloud1.setBounds(0, 85, 564, 150);
 		cloud2.setBounds(0, 347, 564, 150);
@@ -98,33 +92,14 @@ public class SpalshScreen extends JPanel {
 		bkg.add(cloud2);
 		bkg.add(cloud3);
 		
+		SwingUtilities.invokeLater(this::applyCloudLayout);
+		
+		// ------------- ALLOWS FOR CLOUD TO MOVE ---------------------
+		
 		startCloudAnimation();
 		
 		bkg.revalidate();
 		bkg.repaint();
-	}
-	
-	// Helper to apply settings and listeners to clouds
-	private void setupCloud(ImagePanel c) {
-		if (c == null) {
-			return;
-		}
-		c.setBackground(new Color(0, 0, 0, 0));
-		registerClickTarget(c);
-	}
-	
-	private void stopTimers() {
-		if (cloudTimer != null) cloudTimer.stop();
-		if (titleTimer != null) titleTimer.stop();
-	}
-	
-	private void mainGameFont() {
-		try (InputStream is = loadResourceStream("/resources/font/LowresPixel.otf")) {
-			if (is != null) {
-				Font f = Font.createFont(Font.TRUETYPE_FONT, is);
-				g_font = f.deriveFont(25f);
-			}
-		} catch (Exception ignore) { }
 	}
 	
 	private void startCloudAnimation() {
@@ -137,7 +112,7 @@ public class SpalshScreen extends JPanel {
 
 	        if (cloud1stat && cloud2stat && cloud3stat) {
 	            cloudTimer.stop();
-	            showTitle();
+	            showTitle();  //now reveal the title
 	        }
 	    });
 	    cloudTimer.start();
@@ -146,9 +121,11 @@ public class SpalshScreen extends JPanel {
 	private boolean moveCloud(JComponent cloud) {
 		int x = cloud.getX() + cloudSpeed;
 		int y = cloud.getY();
+		
 		int halfWidth = cloud.getWidth() / 2;
 	    int maxX = bkg.getWidth() - halfWidth;
 
+	    // Move only until half the cloud goes offscreen
 	    if (x < maxX) {
 	        cloud.setLocation(x, y);
 	        return false;
@@ -159,61 +136,69 @@ public class SpalshScreen extends JPanel {
 	}
 	
 	private boolean moveCloudleft(JComponent cloud) {
-		 int x = cloud.getX() - cloudSpeed;
+		 int x = cloud.getX() - cloudSpeed;  // move LEFT
 		 int y = cloud.getY();
+
 		 int halfWidth = cloud.getWidth() / 2;
-		 int minX = -halfWidth; 
+		 int minX = -halfWidth;             // stop when half is offscreen left
 
 		 if (x > minX) {
 		    cloud.setLocation(x, y);
 		    return false;
 		 } else {
-		    cloud.setLocation(minX, y);
+		    cloud.setLocation(minX, y);    // final position = like leftmost cloud
 		    return true;
 		 }
 	}
 	
 	private void showTitle() {
 		if (title_holder == null) {
-			title = loadImage("/resources/images/title.png");
+			title = new ImageIcon(getClass().getResource("/resources/images/title.png")).getImage();
 			title_holder = new ImagePanel(title);
 			title_holder.setBackground(new Color (0, 0, 0, 0));
-			registerClickTarget(title_holder);
 		}
 		
-	    titleY = 150;
-	    title_holder.setBounds(285, titleY, 1000, 350);
+		// put it in its starting position
+	    titleY = 150;   // whatever you had before
+	    //title_holder.setBounds(285, titleY, 1000, 350);
 	    title_holder.setVisible(true);
 	    bkg.add(title_holder);
+	    bkg.revalidate();
+	    bkg.repaint();
 	    
 	    mainGameFont();
 		
-		title_panel = new JPanel();
-		title_panel.setBackground(new Color(0, 0, 0, 0));
-		title_panel.setSize(new Dimension(400, 50));
-		title_panel.setLayout(new BorderLayout());
-		registerClickTarget(title_panel);
+		if (title_panel == null) {
+			title_panel = new JPanel();
+			title_panel.setBackground(new Color(0, 0, 0, 0));
+			title_panel.setSize(new Dimension(400, 50));
+			title_panel.setLayout(new BorderLayout());
+			
+			ins = new JLabel("'Click anywhere to continue'");
+			ins.setFont(g_font);
+			ins.setForeground(new Color(128, 0, 0));
+			ins.setHorizontalAlignment(SwingConstants.CENTER);
+			title_panel.add(ins);
+			//title_panel.setBounds(575, 500, 400, 50);
+			
+			bkg.add(title_panel);
+		}
 		
-		ins = new JLabel("'Click anywhere to continue'");
-		ins.setFont(g_font);
-		ins.setForeground(new Color(128, 0, 0));
-		ins.setHorizontalAlignment(SwingConstants.CENTER);
-		title_panel.add(ins);
-		title_panel.setBounds(575, 500, 400, 50);
-		
-		bkg.add(title_panel);
+		applyTitleLayout();
 		
 		bkg.revalidate();
 		bkg.repaint();
 
 	    startTitleBobbing();
+		
 	}
 	
 	private void startTitleBobbing() {
-	    titleTimer = new Timer(40, e -> {
+	    titleTimer = new Timer(40, e -> {  // slower timer = smooth bob
 	        int x = title_holder.getX();
 	        int y = title_holder.getY() + titleMove;
 
+	        // change direction when reaching the amplitude limit
 	        if (y > titleY + titleAmp) {
 	            y = titleY + titleAmp;
 	            titleMove = -1;
@@ -227,56 +212,34 @@ public class SpalshScreen extends JPanel {
 	    });
 	    titleTimer.start();
 	}
-
-	private Image loadImage(String resourcePath) {
-		java.net.URL url = getClass().getResource(resourcePath);
-		if (url != null) {
-			return new ImageIcon(url).getImage();
-		}
-		Path fallback = resolveSourcePath(resourcePath);
-		if (Files.exists(fallback)) {
-			return new ImageIcon(fallback.toString()).getImage();
-		}
-		throw new IllegalStateException("Missing image resource: " + resourcePath);
-	}
-
-	private InputStream loadResourceStream(String resourcePath) throws IOException {
-		InputStream stream = getClass().getResourceAsStream(resourcePath);
-		if (stream != null) return stream;
-		Path fallback = resolveSourcePath(resourcePath);
-		if (Files.exists(fallback)) return Files.newInputStream(fallback);
-		return null;
-	}
-
-	private Path resolveSourcePath(String resourcePath) {
-		String sanitized = resourcePath.startsWith("/") ? resourcePath.substring(1) : resourcePath;
-		return Paths.get("src", sanitized);
-	}
-
-	private void registerClickTarget(Component component) {
-		if (component == null || transitionListener == null) {
+	
+	// ----------- RELATIVE LAYOUT HELPERS ----------------
+	
+	//only for initial cloude positions
+	private void applyCloudLayout() {
+		if (cloudsLaidOut) {
 			return;
 		}
-		boolean alreadyRegistered = false;
-		for (MouseListener listener : component.getMouseListeners()) {
-			if (listener == transitionListener) {
-				alreadyRegistered = true;
-				break;
-			}
-		}
-		if (!alreadyRegistered) {
-			component.addMouseListener(transitionListener);
-		}
-		if (component instanceof Container container) {
-			for (Component child : container.getComponents()) {
-				registerClickTarget(child);
-			}
-			container.addContainerListener(new ContainerAdapter() {
-				@Override
-				public void componentAdded(ContainerEvent e) {
-					registerClickTarget(e.getChild());
-				}
-			});
-		}
+		
+		cloudsLaidOut = true;
+		
+		frame.setRelativeBounds(cloud1, 0, 0.079, 0.385, 0.2);
+		frame.setRelativeBounds(cloud2, 0, 0.4, 0.385, 0.2);
+		frame.setRelativeBounds(cloud3, 0.7, 0.079, 0.385, 0.2);
 	}
+	
+	private void applyTitleLayout() {                       
+        if (title_holder != null) {
+            frame.setRelativeBounds(title_holder, 0.2, 0.139, 0.6, 0.35);
+        }
+        if (title_panel != null) {
+            frame.setRelativeBounds(title_panel, 0.3, 0.55, 0.35, 0.05);
+        }
+    }
 }
+
+
+
+
+
+
